@@ -114,7 +114,7 @@ What is it?
 
 - Detailed capacity trends
 - Intelligent recommendations
-- Powered by patent pending X-FIT algorithm
+- Powered by patent pendingX-FIT algorithm
 
 Key Points:
 
@@ -174,7 +174,7 @@ Video Demonstration: Cluster Software Update
 
 This demo shows how easy it is to upgrade a Nutanix cluster. Software upgrades are non-disruptive to the environment and can be performed at any time.
 
-Cluster Upgrade - https://nutanixinc-my.sharepoint.com/personal/sharon_santana_nutanix_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsharon%5Fsantana%5Fnutanix%5Fcom%2FDocuments%2FCluster%20Upgrade%2Emp4&parent=%2Fpersonal%2Fsharon%5Fsantana%5Fnutanix%5Fcom%2FDocuments&slrid=4b7d6a9e-b0ee-5000-b48f-ba2a7c26aaf2
+Cluster Upgrade - https://youtu.be/_dzyaWbRkAQ
 
 
 Video Demonstration: Cluster Expansion
@@ -182,4 +182,4 @@ Video Demonstration: Cluster Expansion
 
 This demo shows the ease with which a cluster could be expanded through the addition of one more node into the demo environment.
 
-Cluster Expansion - https://nutanixinc-my.sharepoint.com/personal/sharon_santana_nutanix_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsharon%5Fsantana%5Fnutanix%5Fcom%2FDocuments%2Fcluster%20Expansion%2Emp4&parent=%2Fpersonal%2Fsharon%5Fsantana%5Fnutanix%5Fcom%2FDocuments&slrid=517d6a9e-5005-5000-b48f-b1f05af469bc
+Cluster Expansion - https://youtu.be/qg0vU48d5XA

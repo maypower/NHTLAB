@@ -28,15 +28,15 @@ Fill out the following fields and click **Upload File**:
 
 Next, fill out the following fields and click **Save**:
 
-- **Image Name** - CentOS7-*intials*
+- **Image Name** - CentOS7-*initials*
 - **Image Type** - ISO
 - **Image Description** - (Optional) Add a description
 
 .. figure:: images/deploy_workloads_02.png
 
-Now we will upload Windows 2012 ISO to use for deploying VMs.
+Now we will upload Windows 2012 ISO to use for deploying VMs, **if the cluster doesn't already have this image available**.
 
-Next click **Add Image**, and click **URL**.
+Click **Add Image**, and click **URL**.
 
 Fill out the following fields and click **Upload File**:
 
@@ -44,7 +44,7 @@ Fill out the following fields and click **Upload File**:
 
 Next, fill out the following fields and click **Save**:
 
-- **Image Name** - Windows2012-*intials*
+- **Image Name** - Windows2012-*initials*
 - **Image Type** - ISO
 - **Image Description** - (Optional) Add a description
 
@@ -63,7 +63,7 @@ In **Prism Central > Explore > VMs**, click **Create VM**.
 
 Fill out the following fields and click **Save**:
 
-- **Name** - Linux_VM-*intials*
+- **Name** - Linux_VM-*initials*
 - **Description** - (Optional) Description for your VM.
 - **vCPU(s)** - 1
 - **Number of Cores per vCPU** - 1
@@ -73,7 +73,7 @@ Fill out the following fields and click **Save**:
 
 - Select :fa:`pencil` next to CDROM
     - **Operation** - Clone from Image Service
-    - **Image** - CentOS7-*intials* (The Image we added above)
+    - **Image** - CentOS7-*initials* (The Image we added above)
     - Select **Update**
 
 .. figure:: images/deploy_workloads_04.png
@@ -104,14 +104,14 @@ In **Prism Central > Explore > VMs**, click **Create VM**.
 
 Fill out the following fields and click **Save**:
 
-- **Name** - Windows_VM-*intials*
+- **Name** - Windows_VM-*initials*
 - **Description** - (Optional) Description for your VM.
 - **vCPU(s)** - 2
 - **Number of Cores per vCPU** - 1
 - **Memory** - 4 GiB
 - Select :fa:`pencil` next to CDROM
     - **Operation** - Clone from Image Service
-    - **Image** - Windows2012-*intials*
+    - **Image** - Windows2012-*initials*
     - Select **Update**
 
 - Select **+ Add New Disk**
@@ -167,11 +167,11 @@ After the installation completes, the Windows install ISO can be unmounted and t
 
 .. note::
 
-  In ESX:
+  In ESXi:
 
-  - After a VM is created via Prism, it appears in the VMware vSphere UI. An example is shown in the image below.
-  - Alternatively, if a VM is created via VMware vSphere, it appears in the Prism VMs list.
-
+  - After a VM is created via VMware vSphere, it appears in the Prism VMs list.
+  - Alternatively, if a VM is created via Prism, it appears in the VMware vSphere UI. An example is shown in the image below.
+  .. figure:: images/deploy_workloads_08.png
 
 Takeaways
 +++++++++

@@ -39,7 +39,7 @@ You can create multiple containers with different policies.
 
 Explore the configuration basics further.
 
-Go back to the container you created above and try adding another 10 GiB to the advertised capacity. While you’re in that window, what is the redundancy factor for the container you created in the first task?
+Go back to the container you created above and edit it to add another 10 GiB to the advertised capacity. While you’re in that window, what is the redundancy factor for the container you created in the first task?
 
 .. figure:: images/storage_config_02.png
 
@@ -48,11 +48,13 @@ Redundancy Factor
 
 We have discussed how Nutanix clusters handle data: reads, writes, CVM auto-pathing, data locality, intelligent tiering, and seamless VM migrations. While leveraging these features and capabilities, Nutanix clusters continuously monitor and handle data placement in order to optimize performance and allow clusters to maintain high availability during software upgrades and failures.
 
-You can locate the redundancy level of containers and the cluster within Prism, and how many ZooKeeper nodes can be tolerated.
+You can locate the redundancy level of containers and the cluster within Prism.
 
 .. figure:: images/storage_config_03.png
 
 In **Prism > Home**, click the **green OK** in the Data Resiliency Status box. This opens the Data Resiliency Status window.
+
+The picture above shows the Data Resiliency Status window, where you can see, for example, how many ZooKeeper node failures can be tolerated without impacting the cluster. Each service listed has a specific function in the cluster. Zookeeper nodes maintain the configuration of the cluster.
 
 The RF of a cluster in Prism Element could be configured by clicking **Redundancy State** in the Gear menu.
 

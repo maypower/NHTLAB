@@ -84,7 +84,7 @@ First Way, In **Prism Central > Home**, click **View All Tasks**. Second Way, cl
   - The vCenter Server that is managing the hosts in the cluster is auto-discovered and its IP address is auto-populated in the Address field as shown in the example below.
 
   Example view of vCenter registration to Prism:
-  .. figure:: images/nutanix_tech_overview_000.png
+  .. figure:: images/nutanix_tech_overview_15.png
 
 Prism Element
 +++++++++++++
@@ -183,6 +183,8 @@ What page would show you the latest activity in the system? On this page, you ca
 First Way, In **Prism > Tasks**, click **Tasks**. Second Way, click :fa:`circle-o`.
 
 .. note::
+
+  In ESXi:
 
   - The containers created in Prism appear as datastores in vCenter.
 

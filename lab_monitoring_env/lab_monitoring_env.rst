@@ -26,7 +26,7 @@ Select **Cluster Efficiency Summary**, then click **Run** from the **Actions** d
 
 Next, fill out the following fields and click **Run**:
 
-- **Report instance Name** - Cluster Efficiency Summary - *intials*
+- **Report instance Name** - Cluster Efficiency Summary - *initials*
 - **Time Period for Report** - Last 24 Hours
 
 Now lets run the **Environment Summary** report.
@@ -35,7 +35,7 @@ Select **Environment Summary**, then click **Run** from the **Actions** drop-dow
 
 Next, fill out the following fields and click **Run**:
 
-- **Report instance Name** - Environment Summary - *intials*
+- **Report instance Name** - Environment Summary - *initials*
 - **Time Period for Report** - Last 24 Hours
 
 Once the reports are complete, select each report, and do the following:

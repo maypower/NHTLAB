@@ -21,7 +21,7 @@ Explore VM power actions and console access.
 
 In **Prism Central > Explore > VMs**.
 
-Locate the Linux VM you created in the previous lab (Linux_VM-*intials*). (Use Prism’s search function if necessary)
+Locate the Linux VM you created in the previous lab (Linux_VM-*initials*). (Use Prism’s search function if necessary)
 
 .. note::
 
@@ -52,7 +52,8 @@ Select the VM, then click **Launch Console** from the **Actions** drop-down menu
 
   In ESX:
 
-  - The steps in this exercise could also be done from Prism while using an ESXi cluster which VMware vCenter instance is registered to Prism. The image below shows what the Actions drop down menu would look like for a VM hosted in ESXi VM versus one hosted in AHV side by side for comparison.
+  - The steps in this exercise could also be done from Prism while using an ESXi cluster that has its VMware vCenter instance is registered to Prism.
+  - The image below shows the side by side comparison of what the Actions drop down menu would look like for a VM hosted in ESXi versus one hosted in AHV.
 
   .. figure:: images/manage_workloads_06.png
 
@@ -92,7 +93,7 @@ Select the VM, then click **Clone** from the **Actions** drop-down menu.
 Fill out the following fields and click **Save**:
 
 - **Number of Clones** - 4
-- **Prefix Name**  - Flow-*intials*-Clone
+- **Prefix Name**  - Flow-*initials*-Clone
 - **Starting Index Number** - 1
 
 .. figure:: images/manage_workloads_02.png
@@ -104,7 +105,7 @@ Migrate a VM Between Hosts
 
 In **Prism Central > Explore > VMs**.
 
-Locate the Linux Vm from the previous lab (Linux_VM-*intials*).
+Locate the Linux Vm from the previous lab (Linux_VM-*initials*).
 
 - If the VM is powered on, power it Off
 
@@ -129,7 +130,7 @@ Configure VM-to-Host Affinity Policies
 
 In **Prism Central > Explore > VMs**.
 
-Locate the Linux Vm from the previous lab (Linux_VM-*intials*).
+Locate the Linux Vm from the previous lab (Linux_VM-*initials*).
 
 - If the VM is powered on, power it Off
 

@@ -34,6 +34,10 @@ Next, fill out the following fields and click **Save**:
 
 .. figure:: images/deploy_workloads_02.png
 
+.. note::
+  Image management in Prism Central allows you to upload images that can be used to deploy workloads in any of the clusters registered to that Prism Central instance.
+
+
 Now we will upload Windows 2012 ISO to use for deploying VMs, **if the cluster doesn't already have this image available**.
 
 Click **Add Image**, and click **URL**.
@@ -51,6 +55,7 @@ Next, fill out the following fields and click **Save**:
 .. note::
 
   Image management in Prism Central allows you to upload images that can be used to deploy workloads in any of the clusters registered to that Prism Central instance.
+  An image can also be uploaded directly from a cluster's Prism Element.
   This tool can also convert VM disk images to formats that AHV can understand.
   The image service supports raw, vhd, vhdx, vmdk, vdi, iso, and qcow2 disk formats.
 
@@ -142,6 +147,9 @@ Next lets open a console session:
 Select the VM, then click **Launch Console** from the **Actions** drop-down menu.
 
 Progress through the standard install questions until you reach the Windows install location.
+
+.. note::
+  Choose **Datacenter with GUI** and **Custom** installation when presented with the choice.
 
 Click **Load Driver** and navigate to the CD where the Nutanix VirtIO is mounted.
 

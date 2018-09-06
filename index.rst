@@ -68,6 +68,7 @@
   :name: _optional_flow_lab
   :hidden:
 
+  what_is_flow/what_is_flow
   flow_enable/flow_enable
   flow_quarantine_vm/flow_quarantine_vm
   flow_isolate_environments/flow_isolate_environments

@@ -57,8 +57,6 @@
   calm_enable/calm_enable
   calm_sshkey_creation/calm_sshkey_creation
   calm_mysql_blueprint/calm_mysql_blueprint
-  calm_mysql_blueprint_orig/calm_mysql_blueprint
-  calm_lamp_blueprint/calm_lamp_blueprint
   calm_3twa_blueprint/calm_3twa_blueprint
   calm_marketplace/calm_marketplace
 

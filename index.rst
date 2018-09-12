@@ -98,8 +98,7 @@ What's New
 ++++++++++
 
 - Workshop updated for the following software versions:
-    - AOS 5.6
-    - PC 5.7.1
+    - AOS & PC 5.8.1
 
 - Optional Lab Updates:
     - Calm

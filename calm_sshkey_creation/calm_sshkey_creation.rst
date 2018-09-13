@@ -102,6 +102,8 @@ SSH Key Creation
 
 If Putty Keygen is not already present on your machine, first download and install puttygen.exe_.
 
+.. _puttygen.exe: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
 - Open up Putty Key Generator
 - Create a key by clicking **Generate** and then moving your mouse in the blank section
 - Convert the private key to OpenSSH format by selecting **Conversion > Export OpenSSH key**

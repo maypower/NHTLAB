@@ -354,7 +354,7 @@ Scale Out
 
 Imagine you're the administrator of the Task Manager Application that we've been building, and you're currently unsure of the amount of demand for this application by your end users.  Or imagine you expect the demand to ebb and flow due to the time of the year.  How can we easily scale to meet this changing demand?
 
-If you recall in a previous step, we set the minimum number of **WebServer** replicas to 2, and our maximum to 5.  In current versions of Calm, the minimum number is always the starging point.  In the event our default 2 replicas of our **WebServer** web server is not enough to handle the load of your end users, we can perform a **Scale Out** Action.
+If you recall in a previous step, we set the minimum number of **WebServer** replicas to 2, and our maximum to 4.  In current versions of Calm, the minimum number is always the starting point.  In the event our default 2 replicas of our **WebServer** web server is not enough to handle the load of your end users, we can perform a **Scale Out** Action.
 
 In the **Application Overview > Application Profile** section, expand the **Default** Application Profile.  Then, select :fa:`plus-circle` next to the **Actions** section.  On the **Configuration Panel** to the right, rename the new Action to be **Scale Out**.
 
@@ -459,8 +459,9 @@ Within the blueprint editor, click **Launch**. Specify a unique **Application Na
 
 Once the application changes into a **RUNNING** state, navigate to the **Services** tab and select the **HAProxy** service.  On the panel that pops open on the right, highlight and copy the **IP Address** field.  In a new browser tab or window, navigate to http://<HAProxy-IP>, and test out your Task Manager Web Application.
 
-Now, back within Calm, navigate to the **Manage** tab, and click the play button next to the **Scale Out** task, and INPUTHERETHECHECKPOPUPTHING to Scale out the Web Server.  Monitor the Scale Out action on the **Audit** tab.
+.. figure:: images/3twa2.png
 
+Now, back within Calm, navigate to the **Manage** tab, and click the play button next to the **Scale Out** task, and click **Run** to Scale out the Web Server.  Monitor the Scale Out action on the **Audit** tab.
 
 Takeaways
 +++++++++

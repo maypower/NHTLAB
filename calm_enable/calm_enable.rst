@@ -22,7 +22,7 @@ In this exercise you will enable Nutanix Calm and configure a Project to contain
 
 Open \https://*<Prism-Central-IP>*:9440/ in a browser and log in.
 
-From the navigation bar, select **Apps**.
+From the navigation bar, select **Calm** (if you're running PC <5.8.1, then select **Apps**).
 
 Click **Enable**.
 
@@ -64,7 +64,7 @@ Fill out the following fields and click **Save**:
 
 Refresh the browser and select **Calm** from the navigation bar.  If Calm is still enabling, wait another minute, and try again.
 
-.. figure:: images/enable5.png
+.. figure:: images/581enable7.png
 
 Creating A Project
 ++++++++++++++++++
@@ -73,7 +73,7 @@ Projects are the logical construct that integrate Calm with Nutanix's native Sel
 
 Select |proj-icon| **Projects** from the sidebar.
 
-.. figure:: images/enable6.png
+.. figure:: images/581enable8.png
 
 Fill out the following fields:
 

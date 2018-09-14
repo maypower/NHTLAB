@@ -42,7 +42,6 @@ Open up your terminal of choice, and type in *ssh-keygen -t rsa -f ~/[KEY_FILENA
    |  .     o.oE.B*+*|
    +----[SHA256]-----+
 
-.. code-block:: bash
 
 Accessing the Private Key
 .........................
@@ -80,7 +79,6 @@ When working through Calm blueprints and application launches, you'll need the u
    msuEm+VNsXpZQ4lspARV8kqWcNzrhGSfgq1BEHWIHBKp93mMigL4
    -----END RSA PRIVATE KEY-----
 
-.. code-block:: bash
 
 Accessing the Public Key
 ........................
@@ -92,7 +90,6 @@ Depending on the cloud that you're deploying onto, the public SSH key will be us
    $ cat calmkey.pub
    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDoJlPj+ACPyHGm0f+FyTQPRt+m1H6JstyLtvFJUntDyF2/dqpcQ9QfKKw1QcjzGdSS8B6HrdOOjKZz42j01/YLWFy2YrDLQOHcNJi6XowCQ059C7bHehP5lqNN6bRIzdQnqGZGYi8iKYzUChMVusfsPd5ZZo0rHCAiCAP1yFqrcSmq83QNN1X8FZ1COoMB66vKyD2rEoeKz4lilEeWKyP4RLmkOc1eMYQNdyMOCNFFbKmC1nPJ+Mpxo1HfNR84R7WNl5oEaNQOORN+NaOzu5Bxim2hhJvU37J+504azZ1PCUiHiC0+zBw4JfeOKMvtInmkEZQEd3y4RrIHLXKB4Yb centos@nutanix.com
 
-.. code-block:: bash
 
 Windows
 +++++++

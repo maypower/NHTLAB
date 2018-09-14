@@ -23,7 +23,7 @@ In **Prism > Storage**, click **Storage**, click **Table**, then click **+ Stora
 
 Use the following specifications (with **Advance Settings**), and click **Save**:
 
-- **Name** - container-*intials*
+- **Name** - container-*initials*
 - **Advertised Capacity** - 5 GiB
 - **Compression** - Enabled (inline 0 mins)
 - **Deduplication** - Cache Only
@@ -43,7 +43,7 @@ Go back to the container you created above and edit it to add another 10 GiB to 
 
 .. figure:: images/storage_config_02.png
 
-Redundancy Factor
+Redundancy Factor (RF)
 .................
 
 We have discussed how Nutanix clusters handle data: reads, writes, CVM auto-pathing, data locality, intelligent tiering, and seamless VM migrations. While leveraging these features and capabilities, Nutanix clusters continuously monitor and handle data placement in order to optimize performance and allow clusters to maintain high availability during software upgrades and failures.
@@ -51,6 +51,8 @@ We have discussed how Nutanix clusters handle data: reads, writes, CVM auto-path
 You can locate the redundancy level of containers and the cluster within Prism.
 
 .. figure:: images/storage_config_03.png
+
+Block awareness, introduced in 4.0, allows the cluster to survive a full 2RU block failure without using any more disk space.The basic requirement for rack/block fault tolerance is to have minimum 3 blocks in the cluster as we need to store 3 copies of metadata. Starting in AOS 5.8, block awareness is supported in conjunction with erasure coding.
 
 In **Prism > Home**, click the **green OK** in the Data Resiliency Status box. This opens the Data Resiliency Status window.
 

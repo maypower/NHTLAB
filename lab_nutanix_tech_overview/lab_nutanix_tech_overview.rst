@@ -85,7 +85,11 @@ First Way, In **Prism Central > Home**, click **View All Tasks**. Second Way, cl
 
   Example view of vCenter registration to Prism:
 
+<<<<<<< HEAD
+  .. figure:: images/nutanix_tech_overview_000.png
+=======
   .. figure:: images/nutanix_tech_overview_15.png
+>>>>>>> ac28cfd82163b7cabd0597ea5025e19407f1171e
 
 Prism Element
 +++++++++++++

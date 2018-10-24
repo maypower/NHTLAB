@@ -195,11 +195,7 @@ function AuthenticationServer()
           acli image.create ${LDAP_SERVER} \
             container=${MY_IMG_CONTAINER_NAME} \
             image_type=kDiskImage \
-<<<<<<< HEAD
-            source_url=https://s3.amazonaws.com/get-ahv-images/AutoDC-04282018.qcow2 \
-=======
             source_url=https://s3.amazonaws.com/get-ahv-images/AutoDC.qcow2 \
->>>>>>> dd4b535f358478a50978d8253f48487491116b0a
             wait=true
         fi
 

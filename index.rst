@@ -49,6 +49,19 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: Optional Flow Lab
+  :name: _optional_flow_lab
+  :hidden:
+
+  what_is_flow/what_is_flow
+  flow_enable/flow_enable
+  flow_quarantine_vm/flow_quarantine_vm
+  flow_isolate_environments/flow_isolate_environments
+  flow_secure_app/flow_secure_app
+  flow_visualization/flow_visualization
+
+.. toctree::
+  :maxdepth: 2
   :caption: Optional Calm Lab
   :name: _optional_calm_lab
   :hidden:
@@ -61,18 +74,7 @@
   calm_windows_blueprint/calm_windows_blueprint
   calm_marketplace/calm_marketplace
 
-.. toctree::
-  :maxdepth: 2
-  :caption: Optional Flow Lab
-  :name: _optional_flow_lab
-  :hidden:
 
-  what_is_flow/what_is_flow
-  flow_enable/flow_enable
-  flow_quarantine_vm/flow_quarantine_vm
-  flow_isolate_environments/flow_isolate_environments
-  flow_secure_app/flow_secure_app
-  flow_visualization/flow_visualization
 
 .. toctree::
   :maxdepth: 2

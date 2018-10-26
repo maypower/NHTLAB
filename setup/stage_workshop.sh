@@ -8,9 +8,9 @@
 
 WORKSHOPS=(\
 "Calm Workshop (AOS/AHV PC 5.8.x)" \
-"Calm Workshop (AOS/AHV PC 5.7.x)" \
-"Calm Workshop (AOS/AHV PC 5.6.x)" \
-"Citrix Desktop on AHV Workshop (AOS/AHV 5.6)" \
+#"Calm Workshop (AOS/AHV PC 5.7.x)" \
+#"Calm Workshop (AOS/AHV PC 5.6.x)" \
+#"Citrix Desktop on AHV Workshop (AOS/AHV 5.6)" \
 #"Tech Summit 2018" \
 ) # Adjust function stage_clusters for mappings as needed
 
@@ -65,7 +65,7 @@ function stage_clusters {
       Check_Prism_API_Up 'PE' 60
 
       if [[ -d cache ]]; then
-        #TODO:60 proper cache detection and downloads
+        #TODO:90 proper cache detection and downloads
         local _DEPENDENCIES='jq-linux64 sshpass-1.06-2.el7.x86_64.rpm'
         log "Sending cached dependencies (optional)..."
         pushd cache \
@@ -160,6 +160,7 @@ See README.md and guidebook.md for more information.
 
     Interactive Usage: $0
 Non-interactive Usage: $0 -f [${_CLUSTER_FILE}] -w [workshop_number]
+Non-interactive Usage: MY_EMAIL=first.last@nutanix.com MY_PE_HOST=10.x.x.37 PRISM_ADMIN=admin MY_PE_PASSWORD=examplePW $0 -f -
 
 Available Workshops:
 EOF

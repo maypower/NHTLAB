@@ -76,6 +76,9 @@ to the AHV Image Service via Prism Central
 
 The next step is to move images between clusters, but this is
 https://jira.nutanix.com/browse/FEAT-2185 = AHV: Support OVF/OVA Import/Export
+and interesting script work in the meantime, like this and:
+- https://drt-it-github-prod-1.eng.nutanix.com/sandeep-cariapa/export-import-vms-AHV
+- http://thephuck.com/disaster-recovery/backup-and-restore-a-vm-in-ahv/
 
 In the meantime, because NFS and SFTP are interfaces into ADFS,
 we can use either of two methods to move VM disk images between clusters:

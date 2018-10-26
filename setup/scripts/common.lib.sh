@@ -107,7 +107,7 @@ function remote_exec {
   local     _HOST
   local     _LOOP=0
   local _PASSWORD="${MY_PE_PASSWORD}"
-  local   _PW_INIT='nutanix/4u' # TODO:110 hardcoded p/w
+  local   _PW_INIT='nutanix/4u' # TODO:140 hardcoded p/w
   local    _SLEEP=${SLEEP}
   local     _TEST=0
 
@@ -252,7 +252,7 @@ function Dependencies {
     'remove')
       log "Removing ${2}..."
       if [[ -e ${_CPE} && `grep '^ID=' ${_CPE} | awk -F= '{print $2}'` == '"centos"' ]]; then
-        #TODO: assuming we're on PC or PE VM.
+        #TODO:30 assuming we're on PC or PE VM.
         case "${2}" in
           sshpass )
             sudo rpm -e sshpass

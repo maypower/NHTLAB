@@ -49,20 +49,6 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Optional Calm Lab
-  :name: _optional_calm_lab
-  :hidden:
-
-  what_is_calm/what_is_calm
-  calm_enable/calm_enable
-  calm_sshkey_creation/calm_sshkey_creation
-  calm_mysql_blueprint/calm_mysql_blueprint
-  calm_3twa_blueprint/calm_3twa_blueprint
-  calm_windows_blueprint/calm_windows_blueprint
-  calm_marketplace/calm_marketplace
-
-.. toctree::
-  :maxdepth: 2
   :caption: Optional Flow Lab
   :name: _optional_flow_lab
   :hidden:
@@ -73,6 +59,23 @@
   flow_isolate_environments/flow_isolate_environments
   flow_secure_app/flow_secure_app
   flow_visualization/flow_visualization
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Optional Calm Lab
+  :name: _optional_calm_lab
+  :hidden:
+
+  what_is_calm/what_is_calm
+  calm_enable/calm_enable
+  calm_projects/calm_projects
+  calm_sshkey_creation/calm_sshkey_creation
+  calm_mysql_blueprint/calm_mysql_blueprint
+  calm_3twa_blueprint/calm_3twa_blueprint
+  calm_windows_blueprint/calm_windows_blueprint
+  calm_marketplace/calm_marketplace
+
+
 
 .. toctree::
   :maxdepth: 2

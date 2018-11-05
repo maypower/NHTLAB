@@ -9,10 +9,9 @@ export PATH=${PATH}:${HOME}
 . /etc/profile.d/nutanix_env.sh
 . common.lib.sh
 . global.vars.sh
+begin
 
 Dependencies 'install' 'jq'
-
-log `basename "$0"`": __main__: PID=$$"
 
 Determine_PE || log 'Error: cannot Determine_PE' && exit 13
 

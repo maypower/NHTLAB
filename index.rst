@@ -46,6 +46,7 @@
   :hidden:
 
   authentication/authentication
+  calm_enable/calm_enable
 
 .. toctree::
   :maxdepth: 2
@@ -67,7 +68,6 @@
   :hidden:
 
   what_is_calm/what_is_calm
-  calm_enable/calm_enable
   calm_projects/calm_projects
   calm_sshkey_creation/calm_sshkey_creation
   calm_mysql_blueprint/calm_mysql_blueprint

@@ -18,6 +18,14 @@ To stage this workshop, follow these steps:
 
 ** You may see "Failed connect to localhost:8181" That is OK as long as you see the connection to external repo for SSHPASS **
 
+ 4) To stage Files/AFS do the following from the CLI on the CVM:
+
+  wget -nv https://s3.amazonaws.com/get-ahv-images/afs-3.1.0.1.json
+  wget -nv https://s3.amazonaws.com/get-ahv-images/nutanix-afs-el7.3-release-afs-3.1.0.1-stable.qcow2
+
+  ncli software upload software-type=afs meta-file-path="`pwd`/afs-3.1.0.1.json" file-path="`pwd`/nutanix-afs-el7.3-release-afs-3.1.0.1-stable.qcow2"
+
+
 ********************************************************************
 
 The script will do the following:

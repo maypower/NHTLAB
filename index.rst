@@ -46,7 +46,17 @@
   :hidden:
 
   authentication/authentication
+  files_deploy/files_deploy
   calm_enable/calm_enable
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Optional Files Labs
+  :name: _optional_files_labs
+  :hidden:
+  
+  files_smb_share/files_smb_share
+  files_nfs_export/files_nfs_export
 
 .. toctree::
   :maxdepth: 2

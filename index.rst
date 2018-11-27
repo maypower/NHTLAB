@@ -50,6 +50,16 @@
 
 .. toctree::
   :maxdepth: 2
+  :caption: Optional Files Labs
+  :name: _optional_files_labs
+  :hidden:
+
+  files_deploy/files_deploy
+  files_smb_share/files_smb_share
+  files_nfs_export/files_nfs_export
+
+.. toctree::
+  :maxdepth: 2
   :caption: Optional Flow Lab
   :name: _optional_flow_lab
   :hidden:

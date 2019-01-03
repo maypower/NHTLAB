@@ -9,82 +9,63 @@ Overview
 
 .. note::
 
-  Estimated time to complete: **1 HOUR**
+  Estimated time to complete: 1 HOUR
 
-In this exercise you will use Prism to deploy Files, a native, distributed file server solution for Nutanix clusters.
+In this exercise you will use Prism to deploy Acropolis File Services (AFS), a
+native, distributed file server solution for Nutanix clusters. You will configure
+both SMB and NFS shares, and familiarize yourself with new features of the
+AFS offering.
 
-Deploy Files
+In following steps, you may replace ‘xx’ with your assigned cluster ID
+
+
+Deploy Acropolis File Services
 ++++++++++++
 
-In **Prism > File Server**, click **+ File Server**.
+Create AutoDC VM for AD/LDAP connectivity on POC##-AHV
+Open a terminal and SSH to CVM, type ‘ssh nutanix@10.21.xx.31’ , type ‘ yes’ and enter CVM credentials then access to acli command line
+acli image.create AutoDC container=Images image_type=kDiskImage source_url=http://10.21.250.221/images/auto_dc.qcow2
 
-.. figure:: images/files_deploy_001.png
 
-The Files 3.1.0.1 package has already been uploaded and the Data Services IP has been configured as 10.21.XXX.38. Click **Continue**.
+.. figure:: images/image001.png
 
-.. figure:: images/files_deploy_002.png
+Now we have an image out there call AutoDC to create a vm for AD, it is a pre-requirement for deploying File Service.
+Go to Prism Portal through cluster IP, loggin by providing Prism credentials. 
+In Prism > VM, click + Create VM
 
-Fill out the following fields and click **Next**:
 
-  - **Name** - *intials*-Files (e.g. JNC-Files)
-  - **Domain** - ntnxlab.local
-  - **File Server Size** - 1 TiB
+.. figure:: images/image002.png
 
-.. figure:: images/files_deploy_003.png
+Now we are going to create AD VM from AutoDC
 
-.. note:: Clicking **Custom Configuration** will allow you to alter the scale up and scale out sizing of the Files VMs based on User and Throughput targets.
 
-Select the **Primary - Managed** VLAN for the Client Network. Specify your cluster's **AutoDC** VM IP as the **DNS Resolver IP**. Click **Next**.
+.. figure:: images/image003.png
 
-.. note::
+click + Add New Disk , choose ‘Clone from Image Service’ and image ‘AutoDC’，click Add.
+.. figure:: images/image004.png
 
-  In order for the Files cluster to successfully find and join the **NTNXLAB.local** domain it is critical that the **DNS Resolver IP** is set to the **AutoDC** VM IP **FOR YOUR CLUSTER**. By default, this field is set to the primary **Name Server** IP configured for the Nutanix cluster, **this value is incorrect and will not work.**
 
-.. figure:: images/files_deploy_004.png
+Click +Add new NIC and choose ‘Rx-Automation-Network’ vlan.0, click Add.
+.. figure:: images/image005.png
 
-Select the **Secondary - Managed** VLAN for the Storage Network. Click **Next**.
+Now AD VM is created successfully, power on AD VM, then launch console to see domain name and credentials of AD. These informations will be used later.
+.. figure:: images/image006.png
+.. figure:: images/image007.png
 
-.. figure:: images/files_deploy_005.png
+Deploy and setting File Services
+++++++++++++
+As a pre-work in this lab, we will create vlan41 as secondary network for File Service’s IPs need. Click gear icon on top right. Go to configuration page and navigate to Network Configuration. Click +Create Network.
 
- .. note::
+.. figure:: images/image008.png
 
-  It is typically desirable to deploy Files with dedicated networks for client and storage. By design, however, Files does not allow client connections from the storage network in this configuration.
+Create vlan 41 named Secondary then click save
+.. figure:: images/image009.png
 
-Fill out the following fields and click **Next**:
+Now we start to create File Server
+In Prism > File Server, click + File Server.
+Install File Services Software on POCxx
 
-  - Select **Use SMB Protocol**
-  - **Username** - Administrator@ntnxlab.local
-  - **Password** - nutanix/4u
-  - Select **Make this user a File Server admin**
-  - Select **Use NFS Protocol**
-  - **User Management and Authentication** - Unmanaged
-
-.. figure:: images/files_deploy_006.png
-
-.. note:: Similar to NFSv3, in Unmanaged mode, users are only identified by UID/GID. NFS connections will still require an NFSv4 capable client.
-
-Click **Next**.
-
-Fill out the following fields and click **Create**:
-
-  - Select **Create a Protection Domain and a default schedule (highly recommended)**
-  - **PROTECTION DOMAIN NAME** - NTNX-JNC-Files
-
-.. figure:: images/files_deploy_007.png
-
-Monitor deployment progress in **Prism > Tasks**.
-
-.. figure:: images/files_deploy_008.png
-
-.. note::
-
-  If you receive a warning regarding DNS record validation failure, this can be safely ignored. The shared cluster does not use the same DNS servers as your Files cluster, and as a result is unable to resolve the DNS entries created when deploying Files.
-
-Upon completion, select the **AFS** server and click **Protect**.
-
-Observe the default Self Service Restore schedules, this feature controls the snapshot schedule for Windows' Previous Versions functionality. Supporting Previous Versions allows end users to roll back changes to files without engaging storage or backup administrators. Note these local snapshots do not protect the file server cluster from local failures and that replication of the entire file server cluster can be performed to remote Nutanix clusters. Click **Close**.
-
-.. figure:: images/files_deploy_009.png
+.. figure:: images/image010.png
 
 Takeaways
 +++++++++

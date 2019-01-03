@@ -1,13 +1,13 @@
 .. _files_deploy:
 
 -------------
-Files: Deploy
+Nutanix Files: Deploy Lab
 -------------
 
 Overview
 ++++++++
 
-.. note::
+.. Note::
 
 Estimated time to complete: 1 HOUR
 

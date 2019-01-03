@@ -12,12 +12,10 @@
 .. toctree::
   :maxdepth: 2
   :caption: Nutanix Files Labs
-  :name: _Nutanix Files Labs
+  :name: _files_deploy
   :hidden:
 
-  lab_nutanix_tech_overview/lab_nutanix_tech_overview
-  lab_storage_configuration/lab_storage_configuration
-  lab_network_configuration/lab_network_configuration
+ files_deploy/files_deploy
 
 
 

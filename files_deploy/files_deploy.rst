@@ -9,7 +9,7 @@ Overview
 
 .. Note::
 
-Estimated time to complete: 1 HOUR
+Estimated time to complete: **1 HOUR**
 
 In this exercise you will use Prism to deploy Acropolis File Services (AFS), a
 native, distributed file server solution for Nutanix clusters. You will configure

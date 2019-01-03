@@ -2,8 +2,8 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Technology Overview
-  :name: _technology_overview
+  :caption: Nutanix Foundation Lab
+  :name: _Nutanix Foundation Lab
   :hidden:
 
   what_is_nutanix/what_is_nutanix
@@ -11,8 +11,8 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Nutanix Configuration Labs
-  :name: _nutanix_configuration_labs
+  :caption: Nutanix Files Labs
+  :name: _Nutanix Files Labs
   :hidden:
 
   lab_nutanix_tech_overview/lab_nutanix_tech_overview
@@ -27,7 +27,7 @@
 Getting Started
 ---------------
 
-Welcome to the Nutanix Technology Bootcamp! This workbook accompanies an instructor-led session that introduces Nutanix technologies and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
+Welcome to the Nutanix NHT Bootcamp! This workbook accompanies an instructor-led session that introduces Nutanix technologies and many common management tasks. Each section has a lesson and an exercise to give you hands-on practice. The instructor explains the exercises and answers any additional questions that you may have.
 
 At the end of the bootcamp, attendees should understand the basic concepts and technologies that make up the Nutanix Enterprise Cloud stack and should be well prepared for a hosted or onsite proof-of-concept (POC) engagement.
 

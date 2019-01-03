@@ -47,6 +47,7 @@ Now we are going to create AD VM from AutoDC
 
 
 click **+ Add New Disk** , choose ‘Clone from Image Service’ and image ‘AutoDC’，click **Add**.
+
 .. figure:: images/image005.png
 
 
@@ -54,6 +55,7 @@ Click **+Add new NIC** and choose ‘Rx-Automation-Network’ vlan.0, click **Ad
 .. figure:: images/image006.png
 
 Now AD VM is created successfully, power on AD VM, then launch console to see domain name and credentials of AD. These informations will be used later.
+
 .. figure:: images/image007.png
 .. figure:: images/image008.png
 
@@ -64,6 +66,7 @@ As a pre-work in this lab, we will create vlan41 as secondary network for File S
 .. figure:: images/image009.png
 
 Create vlan 41 named Secondary then click **save**
+
 .. figure:: images/image010.png
 .. figure:: images/image011.png
 
@@ -80,6 +83,7 @@ Fill out the following fields and click **Next**:
 •	**Name** - POCxx-Files (e.g. POC04-Files)
 •	**Domain** - POCLAB.local
 •	**File Server Size** - 1 TiB
+
 .. figure:: images/image013.png
 
 Select the **Rx-Automation-Network-Unmanaged** VLAN for the Client Network. 
@@ -89,6 +93,7 @@ Fill out the following fields and click **Next**:
 •	**IP** – from 10.21.xx.100 to 10.21.xx.102 (click save on the right)
 •	**DNS** – 10.21.xx.51
 •	**NTP** – default
+
 .. figure:: images/image014.png
 .. figure:: images/image015.png
 Select the **Secondary - Managed VLAN** for the Storage Network. 
@@ -96,6 +101,7 @@ Fill out the following fields and click **Next**:
 •	**Subnet Mask** – 255.255.255.128
 •	**Gateway** – 10.21.xx.129
 •	**IP** – **from** 10.21.xx.132 **to** 10.21.xx.135 (click **save** on the right)
+
 .. figure:: images/image016.png
 .. figure:: images/image017.png
 

@@ -24,7 +24,7 @@ Deploy Acropolis File Services
 
 Create AutoDC VM for AD/LDAP connectivity on POC##-AHV
 
-Open a terminal and SSH to CVM, type ‘ssh nutanix@10.21.xx.31’ , type ‘ yes’ and enter CVM credentials then access to acli command line
+Open a terminal and SSH to CVM, type ‘ssh nutanix@10.21.xx.31’ , type ‘ yes’ and enter CVM credentials then access to acli command line:
 
 acli image.create AutoDC container=Images image_type=kDiskImage source_url=http://10.21.250.221/images/auto_dc.qcow2
 
@@ -52,6 +52,7 @@ click **+ Add New Disk** , choose ‘Clone from Image Service’ and image ‘Au
 
 
 Click **+Add new NIC** and choose ‘Rx-Automation-Network’ vlan.0, click **Add**.
+
 .. figure:: images/image006.png
 
 Now AD VM is created successfully, power on AD VM, then launch console to see domain name and credentials of AD. These informations will be used later.
@@ -113,14 +114,17 @@ Fill out the following fields and click **Next**:
 •	Select **Make this user a File Server admin**
 •	Select **Use NFS Protocol**
 •	**User Management and Authentication** - Unmanaged
+
 .. figure:: images/image018.png
 
 Fill out the following fields and click **Create**:
 •	Select **Create a Protection Domain and a default schedule (highly recommended)**
 •	**PROTECTION DOMAIN NAME** - NTNX-POCxx-Files
+
 .. figure:: images/image019.png
 
 Monitor deployment progress in **Prism > Tasks**.
+
 .. figure:: images/image020.png
 
 

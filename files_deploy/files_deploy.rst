@@ -16,7 +16,7 @@ native, distributed file server solution for Nutanix clusters. You will configur
 both SMB and NFS shares, and familiarize yourself with new features of the
 AFS offering.
 
-In following steps, you may replace ‘xx’ with your assigned cluster ID
+In following steps, you may replace **‘xx’ ** with your assigned cluster ID
 
 
 Deploy Acropolis File Services
@@ -26,7 +26,7 @@ Create AutoDC VM for AD/LDAP connectivity on POC##-AHV
 
 Open a terminal and SSH to CVM, type ‘ssh nutanix@10.21.xx.31’ , type ‘ yes’ and enter CVM credentials then access to acli command line
 
-acli image.create AutoDC container=Images image_type=kDiskImage source_url=http://10.21.250.221/images/auto_dc.qcow2
+**acli image.create AutoDC container=Images image_type=kDiskImage source_url=http://10.21.250.221/images/auto_dc.qcow2**
 
 
 .. figure:: images/image001.png
@@ -34,7 +34,7 @@ acli image.create AutoDC container=Images image_type=kDiskImage source_url=http:
 Now we have an image out there call AutoDC to create a vm for AD, it is a pre-requirement for deploying File Service.
 
 Go to Prism Portal through cluster IP, loggin by providing Prism credentials. 
-In Prism > VM, click + Create VM
+In **Prism > VM**, click **+ Create VM**
 
 .. figure:: images/image002.png
 

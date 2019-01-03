@@ -12,6 +12,7 @@
   :hidden:
 
  files_deploy/files_deploy
+ diyfoundation/diyfoundation
 
 
 
